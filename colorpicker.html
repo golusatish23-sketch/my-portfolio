@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      transition: 0.5s;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    input {
+      margin: 10px;
+      padding: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Pick your own Gradient!</h1>
+  <input type="color" id="color1" value="#6a11cb">
+  <input type="color" id="color2" value="#2575fc">
+  <script>
+    const c1 = document.getElementById('color1');
+    const c2 = document.getElementById('color2');
+    function setGradient() {
+      document.body.style.background = `linear-gradient(to right, ${c1.value}, ${c2.value})`;
+    }
+    c1.addEventListener('input', setGradient);
+    c2.addEventListener('input', setGradient);
+  </script>
+</body>
+</html>

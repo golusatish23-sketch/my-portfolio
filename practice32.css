@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ☀️ Sun */
+#sun {
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(to right, orange, red);
+  border-radius: 50%;
+  position: relative;
+}
+
+/* 🪐 Mercury */
+#mercu {
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(135deg, #9e9e9e, #757575);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(120px);
+  transform-origin: center;
+  animation: movmer 5s linear infinite;
+}
+
+/* 🔁 Animation */
+@keyframes movmer {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+#venus{
+    height: 50px;
+  width: 50px;
+  background: linear-gradient(135deg, #9e9e9e, #757575);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(180px);
+  transform-origin: center;
+  animation: movmer1 4s linear infinite;
+
+}
+@keyframes movmer1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
+  }
+}
