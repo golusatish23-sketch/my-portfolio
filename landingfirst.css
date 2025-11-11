@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  height: 100vh;
+  background-color: rgb(63, 119, 125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* landing page design */
+.container{
+    height: 700px;
+    width: 1200px;
+    background-color: rgba(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+/* navabar design */
+nav{
+    height: 60px;
+    width: 1200px;
+    padding: 5px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(52, 52, 204);
+}
+nav li:first-child{
+    margin-right: 520px;
+    
+}
+nav li{
+    margin: 30px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(99, 97, 97);
+    transition: rgb(99,97,97) 1s ease-in;
+}
+nav a:hover{
+    color: red;
+}
+/* content area */
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+/* paragraph section */
+.textwa{
+    display: flex;
+}
+#text1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+#text2{
+    color: rgb(52, 52, 204);
+}
+#text3{
+    text-align: center;
+    margin-top: 30px;
+}
+#text4{
+    font-size: 20px;
+    color: aliceblue;
+    display:inline-flex ;
+    background-color: rgb(45, 65, 143);
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+ }
+/* button */
+button{
+    height: 40px;
+    width:150px ;
+    font-size:20px ;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 300px;
+    display: inline-block;
+    cursor: pointer;
+} 
+/* image section in */
+.imgsection{
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+
+}
+#photo{
+    width: 680px;
+    height: 500px;
+    margin-top: 10px;
+
+}

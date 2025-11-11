@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mycard{
+    height: 300px;
+    width: 450px;
+    background-color: azure;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+/* head section */
+#head{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/* detail container */
+#detail{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+
+
+}
+/*photo desig */
+#photo{
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#detail{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* svg image */
+#x,#i,#y{
+    height: 30px;
+    width: 30px;
+}
